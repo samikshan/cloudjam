@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sounds</title>
+  </head>
+  <body>
+    <h1>Sounds</h1>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Sound</th>
+          <th>Created By</th>
+          <th>Genre</th>
+          <th>Contributors</th>
+          <th>Components</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for sound in sounds %}
+          <tr>
+            <td>
+              {{ sound.title }}<br>
+              <small style="color: #888">{{ sound.title }}</small>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

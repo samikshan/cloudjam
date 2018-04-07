@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Sound
 
-# Create your views here.
+def home(request):
+    sounds = Sound.objects.all()
+    return render(request, 'home.html', {'sounds': sounds})
